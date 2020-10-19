@@ -10,23 +10,22 @@
 <body>
     <script>
         let socankiemtra = prompt('Nhập số cần kiểm tra:');
-        kiemtra = Number(socankiemtra);
-        if (kiemtra == NaN) {
-            alert('Đây không phải chữ số!')
+        let kiemtra = Number(socankiemtra);
+
+        if (isNaN(socankiemtra) == true) {
+            alert('Đây không phải chữ số!');
+            window.stop()
         }
         else {
-            if (kiemtra < 1) {
-                alert('Nhập lại số cần check!')
+            if (kiemtra % 2 == 0) {
+            alert('Số này là số chẵn!');
             }
             else {
-                if (kiemtra % 2 == 0) {
-                    alert('Số này là số chẵn!');
-                }
-                else {
-                    alert('Số này là số lẻ!');
-                }
+            alert('Số này là số lẻ!');
             }
         }
+
+
     </script>
 </body>
 
